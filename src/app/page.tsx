@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useCallback, ChangeEvent } from "react";
@@ -140,7 +141,7 @@ export default function PhotoVersePage() {
               Choose an image file (JPEG, PNG, GIF, WEBP, max {MAX_FILE_SIZE_MB}MB) to inspire a poem.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="flex flex-col space-y-4">
             <div>
               <Label htmlFor="photo-upload" className="sr-only">Upload Photo</Label>
               <Input
@@ -153,7 +154,7 @@ export default function PhotoVersePage() {
               />
             </div>
             {photoPreview && (
-              <div className="mt-4 relative aspect-video w-full overflow-hidden rounded-md border bg-muted">
+              <div className="relative aspect-video w-full overflow-hidden rounded-md border bg-muted">
                 <NextImage
                   src={photoPreview}
                   alt="Uploaded photo preview"
@@ -164,7 +165,7 @@ export default function PhotoVersePage() {
               </div>
             )}
             {error && (
-              <p id="error-message" className="text-sm text-destructive flex items-center gap-1 mt-2">
+              <p id="error-message" className="text-sm text-destructive flex items-center gap-1">
                 <AlertCircle className="h-4 w-4" /> {error}
               </p>
             )}
