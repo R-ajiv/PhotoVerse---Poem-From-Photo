@@ -1,6 +1,6 @@
 # 📸 PhotoVerse – AI-Powered Photo to Poem Generator
 
-PoemLens is a web application that transforms user-uploaded photos into beautiful, contextually-inspired poems. Built with Next.js and powered by Vibe Coding via Firebase Studio, it merges creativity with cutting-edge AI to turn images into words.
+PhotoVerse is a web application that transforms user-uploaded photos into beautiful, contextually-inspired poems. Built with Next.js and powered by Vibe Coding via Firebase Studio, it merges creativity with cutting-edge AI to turn images into words.
 
 ## ✨ Features
 
