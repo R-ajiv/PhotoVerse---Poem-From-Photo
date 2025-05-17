@@ -225,7 +225,7 @@ export default function PhotoVersePage() {
               </div>
             )}
           </CardContent>
-          <CardFooter className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-6 mt-auto">
+          <CardFooter className="flex flex-col sm:flex-row md:flex-col lg:flex-row justify-between items-center gap-3 pt-6 mt-auto">
              <Button onClick={handleClear} variant="outline" disabled={!photoFile && !photoPreview} className="w-full sm:w-auto">
               <Trash2 className="mr-2 h-4 w-4" /> Clear Image
             </Button>
@@ -286,7 +286,7 @@ export default function PhotoVersePage() {
             )}
           </CardContent>
           {generatedPoem && !isLoading && (
-            <CardFooter className="flex flex-col sm:flex-row justify-end gap-3 pt-6 mt-auto">
+            <CardFooter className="flex flex-col sm:flex-row md:flex-col lg:flex-row justify-end gap-3 pt-6 mt-auto">
               <Button onClick={handleDownloadPoem} variant="outline" className="w-full sm:w-auto">
                 <Download className="mr-2 h-4 w-4" /> Download
               </Button>

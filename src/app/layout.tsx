@@ -7,6 +7,7 @@ import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer'; // Added Footer import
 import { cn } from '@/lib/utils';
 
 // Lora is from next/font/google, so it IS a function to call
@@ -45,6 +46,7 @@ export default function RootLayout({
         <main className="flex-grow container mx-auto px-4 py-8 sm:px-6 lg:px-8">
           {children}
         </main>
+        <Footer /> {/* Added Footer component */}
         <Toaster />
       </body>
     </html>
