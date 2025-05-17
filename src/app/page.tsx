@@ -165,6 +165,17 @@ export default function PhotoVersePage() {
 
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
+      <section className="text-center pt-8 pb-6 md:pt-12 md:pb-8 mb-6 md:mb-8">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold tracking-tight mb-4">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">
+            PhotoVerse
+          </span>
+        </h1>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-xl lg:max-w-2xl mx-auto">
+          Transform your photos into unique, AI-generated poems. Upload an image and let your creativity flow.
+        </p>
+      </section>
+
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
         <Card className="shadow-xl transition-all duration-300 hover:shadow-glow-card-hover flex flex-col">
           <CardHeader className="pb-4">
@@ -226,7 +237,7 @@ export default function PhotoVersePage() {
             )}
           </CardContent>
           <CardFooter className="flex flex-col sm:flex-row md:flex-col lg:flex-row justify-between items-center gap-3 pt-6 mt-auto">
-             <Button onClick={handleClear} variant="outline" disabled={!photoFile && !photoPreview} className="w-full sm:w-auto">
+             <Button onClick={handleClear} variant="outline" size="lg" disabled={!photoFile && !photoPreview} className="w-full sm:w-auto">
               <Trash2 className="mr-2 h-4 w-4" /> Clear Image
             </Button>
             <Button 
@@ -300,5 +311,3 @@ export default function PhotoVersePage() {
     </div>
   );
 }
-
-    
