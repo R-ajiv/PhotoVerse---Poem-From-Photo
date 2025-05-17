@@ -92,7 +92,12 @@ export default {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+      boxShadow: {
+        'glow-primary-hover': '0 0 12px 1px hsl(var(--primary) / 0.6)',
+        'glow-accent-hover': '0 0 12px 1px hsl(var(--accent) / 0.6)',
+        'glow-card-hover': '0 4px 25px -5px hsl(var(--primary) / 0.35)',
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

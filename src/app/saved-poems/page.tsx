@@ -60,7 +60,7 @@ export default function SavedPoemsPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {savedPoems.map((poem) => (
-          <Card key={poem.id} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card key={poem.id} className="flex flex-col shadow-lg hover:shadow-glow-card-hover transition-shadow duration-300">
             <CardHeader>
               <div className="relative aspect-video w-full overflow-hidden rounded-t-md bg-muted">
                 <NextImage

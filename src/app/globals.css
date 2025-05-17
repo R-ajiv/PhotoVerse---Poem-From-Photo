@@ -4,91 +4,91 @@
 
 @layer base {
   :root {
-    --background: 274 33% 95%; /* Light Lavender #F2EEF7 */
-    --foreground: 270 10% 25%; /* Dark Purple-Gray for text */
+    --background: 270 20% 7%; /* Very Dark Purple/Almost Black */
+    --foreground: 270 30% 92%; /* Light Lavender Gray */
 
-    --card: 274 33% 98%; /* Slightly lighter than background */
-    --card-foreground: 270 10% 25%;
+    --card: 270 15% 12%; /* Dark Purple Card */
+    --card-foreground: 270 30% 92%;
 
-    --popover: 274 33% 98%;
-    --popover-foreground: 270 10% 25%;
+    --popover: 270 15% 10%; /* Dark Popover */
+    --popover-foreground: 270 30% 92%;
 
-    --primary: 270 20% 62%; /* Soft, desaturated purple #A088B4 */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 270 70% 60%; /* Vibrant Purple */
+    --primary-foreground: 270 20% 98%; /* Very Light almost White */
 
-    --secondary: 270 15% 75%; /* Lighter purple */
-    --secondary-foreground: 270 10% 20%; /* Dark text for lighter purple */
+    --secondary: 270 40% 45%; /* Muted Desaturated Purple */
+    --secondary-foreground: 270 20% 90%; /* Light Grayish Purple */
 
-    --muted: 270 15% 88%; /* Very light gray/lavender */
-    --muted-foreground: 270 10% 45%; /* Medium gray text */
+    --muted: 270 10% 20%; /* Dark Gray with Purple Hint */
+    --muted-foreground: 270 15% 65%; /* Medium Gray-Purple */
 
-    --accent: 0 22% 75%; /* Muted rose #C9A6A6 */
-    --accent-foreground: 0 20% 30%; /* Darker text for muted rose */
+    --accent: 290 70% 65%; /* Bright Pinkish-Purple */
+    --accent-foreground: 290 20% 98%; /* Very Light */
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 55%; /* Standard Red for Destructive */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 270 15% 85%; /* Light lavender-gray border */
-    --input: 270 15% 85%;
-    --ring: 270 20% 70%; /* A slightly more vibrant primary for focus rings */
+    --border: 270 15% 25%; /* Dark Purple-Gray Border */
+    --input: 270 15% 22%; /* Input Border */
+    --ring: 270 70% 65%; /* Brighter Purple Ring (aligned with Primary) */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Slightly more rounded */
 
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 270 70% 60%; /* Primary Purple */
+    --chart-2: 290 70% 65%; /* Accent Purple */
+    --chart-3: 270 50% 50%; /* Medium Purple */
+    --chart-4: 290 50% 55%; /* Medium Pinkish-Purple */
+    --chart-5: 270 30% 40%; /* Muted Purple */
 
-    /* Sidebar specific colors - can be adjusted if sidebar is used extensively */
-    --sidebar-background: 274 33% 97%;
-    --sidebar-foreground: 270 10% 30%;
-    --sidebar-primary: 270 20% 62%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 22% 80%;
-    --sidebar-accent-foreground: 0 20% 35%;
-    --sidebar-border: 270 15% 88%;
-    --sidebar-ring: 270 20% 70%;
+    /* Sidebar specific colors */
+    --sidebar-background: 270 15% 10%;
+    --sidebar-foreground: 270 30% 90%;
+    --sidebar-primary: 270 70% 65%;
+    --sidebar-primary-foreground: 270 20% 98%;
+    --sidebar-accent: 290 70% 70%;
+    --sidebar-accent-foreground: 290 20% 98%;
+    --sidebar-border: 270 15% 18%;
+    --sidebar-ring: 270 70% 70%;
   }
 
   .dark {
-    --background: 270 10% 15%; /* Dark Purple/Gray */
-    --foreground: 270 15% 85%; /* Light Lavender/Gray text */
+    --background: 270 20% 7%; /* Very Dark Purple/Almost Black */
+    --foreground: 270 30% 92%; /* Light Lavender Gray */
 
-    --card: 270 10% 20%;
-    --card-foreground: 270 15% 85%;
+    --card: 270 15% 12%; /* Dark Purple Card */
+    --card-foreground: 270 30% 92%;
 
-    --popover: 270 10% 20%;
-    --popover-foreground: 270 15% 85%;
+    --popover: 270 15% 10%; /* Dark Popover */
+    --popover-foreground: 270 30% 92%;
 
-    --primary: 270 25% 70%; /* Slightly lighter/more vibrant purple for dark mode */
-    --primary-foreground: 270 10% 10%; /* Dark text on primary */
+    --primary: 270 70% 60%; /* Vibrant Purple */
+    --primary-foreground: 270 20% 98%; /* Very Light almost White */
 
-    --secondary: 270 15% 30%;
-    --secondary-foreground: 270 15% 80%;
+    --secondary: 270 40% 45%; /* Muted Desaturated Purple */
+    --secondary-foreground: 270 20% 90%; /* Light Grayish Purple */
 
-    --muted: 270 10% 25%;
-    --muted-foreground: 270 10% 55%;
+    --muted: 270 10% 20%; /* Dark Gray with Purple Hint */
+    --muted-foreground: 270 15% 65%; /* Medium Gray-Purple */
 
-    --accent: 0 25% 65%; /* Muted rose, slightly adjusted for dark */
-    --accent-foreground: 0 10% 90%; /* Light text on accent */
+    --accent: 290 70% 65%; /* Bright Pinkish-Purple */
+    --accent-foreground: 290 20% 98%; /* Very Light */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 70% 55%; /* Standard Red for Destructive */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 270 10% 30%;
-    --input: 270 10% 30%;
-    --ring: 270 25% 75%;
-
-    /* Dark Sidebar specific colors */
-    --sidebar-background: 270 10% 18%;
-    --sidebar-foreground: 270 15% 80%;
-    --sidebar-primary: 270 25% 70%;
-    --sidebar-primary-foreground: 270 10% 10%;
-    --sidebar-accent: 0 25% 60%;
-    --sidebar-accent-foreground: 0 10% 85%;
-    --sidebar-border: 270 10% 28%;
-    --sidebar-ring: 270 25% 75%;
+    --border: 270 15% 25%; /* Dark Purple-Gray Border */
+    --input: 270 15% 22%; /* Input Border */
+    --ring: 270 70% 65%; /* Brighter Purple Ring (aligned with Primary) */
+    
+    /* Dark Sidebar specific colors - same as root for this theme */
+    --sidebar-background: 270 15% 10%;
+    --sidebar-foreground: 270 30% 90%;
+    --sidebar-primary: 270 70% 65%;
+    --sidebar-primary-foreground: 270 20% 98%;
+    --sidebar-accent: 290 70% 70%;
+    --sidebar-accent-foreground: 290 20% 98%;
+    --sidebar-border: 270 15% 18%;
+    --sidebar-ring: 270 70% 70%;
   }
 }
 
@@ -98,6 +98,5 @@
   }
   body {
     @apply bg-background text-foreground;
-    /* Default font-family removed, will be handled by next/font in layout.tsx */
   }
 }

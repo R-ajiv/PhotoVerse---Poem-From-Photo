@@ -130,7 +130,7 @@ export default function PhotoVersePage() {
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
       <div className="grid md:grid-cols-2 gap-8 items-start">
-        <Card className="shadow-lg transition-all duration-300 hover:shadow-xl">
+        <Card className="shadow-lg transition-all duration-300 hover:shadow-glow-card-hover">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-2xl">
               <UploadCloud className="h-6 w-6 text-primary" />
@@ -184,7 +184,7 @@ export default function PhotoVersePage() {
           </CardFooter>
         </Card>
 
-        <Card className="shadow-lg transition-all duration-300 hover:shadow-xl sticky top-20">
+        <Card className="shadow-lg transition-all duration-300 hover:shadow-glow-card-hover sticky top-20">
           <CardHeader>
             <CardTitle className="text-2xl">Generated Poem</CardTitle>
             <CardDescription>
