@@ -142,14 +142,14 @@ export default function PhotoVersePage() {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col space-y-4">
-            <div>
+            <div className="flex justify-center">
               <Label htmlFor="photo-upload" className="sr-only">Upload Photo</Label>
               <Input
                 id="photo-upload"
                 type="file"
                 accept="image/jpeg, image/png, image/gif, image/webp"
                 onChange={handleFileChange}
-                className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
+                className="w-auto file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
                 aria-describedby="error-message"
               />
             </div>
