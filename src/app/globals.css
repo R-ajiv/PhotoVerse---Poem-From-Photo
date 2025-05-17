@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,40 +8,39 @@
     --background: 270 20% 7%; /* Very Dark Purple/Almost Black */
     --foreground: 270 30% 92%; /* Light Lavender Gray */
 
-    --card: 270 15% 12%; /* Dark Purple Card */
+    --card: 270 18% 10%; /* Darker Purple Card for better contrast */
     --card-foreground: 270 30% 92%;
 
     --popover: 270 15% 10%; /* Dark Popover */
     --popover-foreground: 270 30% 92%;
 
-    --primary: 270 70% 60%; /* Vibrant Purple */
+    --primary: 270 75% 65%; /* Slightly more vibrant Purple */
     --primary-foreground: 270 20% 98%; /* Very Light almost White */
 
     --secondary: 270 40% 45%; /* Muted Desaturated Purple */
     --secondary-foreground: 270 20% 90%; /* Light Grayish Purple */
 
-    --muted: 270 10% 20%; /* Dark Gray with Purple Hint */
-    --muted-foreground: 270 15% 65%; /* Medium Gray-Purple */
+    --muted: 270 12% 18%; /* Dark Gray with Purple Hint - slightly lighter for muted backgrounds */
+    --muted-foreground: 270 20% 70%; /* Medium Gray-Purple - adjusted for better readability */
 
-    --accent: 290 70% 65%; /* Bright Pinkish-Purple */
-    --accent-foreground: 290 20% 98%; /* Very Light */
+    --accent: 290 80% 70%; /* Brighter Pinkish-Purple */
+    --accent-foreground: 290 10% 98%; /* Very Light */
 
     --destructive: 0 70% 55%; /* Standard Red for Destructive */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 270 15% 25%; /* Dark Purple-Gray Border */
+    --border: 270 15% 28%; /* Slightly lighter Dark Purple-Gray Border for definition */
     --input: 270 15% 22%; /* Input Border */
-    --ring: 270 70% 65%; /* Brighter Purple Ring (aligned with Primary) */
+    --ring: 270 75% 70%; /* Brighter Purple Ring (aligned with Primary) */
 
-    --radius: 0.75rem; /* Slightly more rounded */
+    --radius: 0.85rem; /* Slightly more rounded for a softer, modern feel */
 
-    --chart-1: 270 70% 60%; /* Primary Purple */
-    --chart-2: 290 70% 65%; /* Accent Purple */
-    --chart-3: 270 50% 50%; /* Medium Purple */
-    --chart-4: 290 50% 55%; /* Medium Pinkish-Purple */
-    --chart-5: 270 30% 40%; /* Muted Purple */
+    --chart-1: 270 70% 60%; 
+    --chart-2: 290 70% 65%; 
+    --chart-3: 270 50% 50%; 
+    --chart-4: 290 50% 55%; 
+    --chart-5: 270 30% 40%; 
 
-    /* Sidebar specific colors */
     --sidebar-background: 270 15% 10%;
     --sidebar-foreground: 270 30% 90%;
     --sidebar-primary: 270 70% 65%;
@@ -51,36 +51,28 @@
     --sidebar-ring: 270 70% 70%;
   }
 
+  /* The .dark class will use the same variables as :root for this theme */
   .dark {
-    --background: 270 20% 7%; /* Very Dark Purple/Almost Black */
-    --foreground: 270 30% 92%; /* Light Lavender Gray */
-
-    --card: 270 15% 12%; /* Dark Purple Card */
+    --background: 270 20% 7%; 
+    --foreground: 270 30% 92%; 
+    --card: 270 18% 10%; 
     --card-foreground: 270 30% 92%;
-
-    --popover: 270 15% 10%; /* Dark Popover */
+    --popover: 270 15% 10%; 
     --popover-foreground: 270 30% 92%;
-
-    --primary: 270 70% 60%; /* Vibrant Purple */
-    --primary-foreground: 270 20% 98%; /* Very Light almost White */
-
-    --secondary: 270 40% 45%; /* Muted Desaturated Purple */
-    --secondary-foreground: 270 20% 90%; /* Light Grayish Purple */
-
-    --muted: 270 10% 20%; /* Dark Gray with Purple Hint */
-    --muted-foreground: 270 15% 65%; /* Medium Gray-Purple */
-
-    --accent: 290 70% 65%; /* Bright Pinkish-Purple */
-    --accent-foreground: 290 20% 98%; /* Very Light */
-
-    --destructive: 0 70% 55%; /* Standard Red for Destructive */
+    --primary: 270 75% 65%; 
+    --primary-foreground: 270 20% 98%; 
+    --secondary: 270 40% 45%; 
+    --secondary-foreground: 270 20% 90%; 
+    --muted: 270 12% 18%; 
+    --muted-foreground: 270 20% 70%; 
+    --accent: 290 80% 70%; 
+    --accent-foreground: 290 10% 98%; 
+    --destructive: 0 70% 55%; 
     --destructive-foreground: 0 0% 98%;
-
-    --border: 270 15% 25%; /* Dark Purple-Gray Border */
-    --input: 270 15% 22%; /* Input Border */
-    --ring: 270 70% 65%; /* Brighter Purple Ring (aligned with Primary) */
+    --border: 270 15% 28%; 
+    --input: 270 15% 22%; 
+    --ring: 270 75% 70%; 
     
-    /* Dark Sidebar specific colors - same as root for this theme */
     --sidebar-background: 270 15% 10%;
     --sidebar-foreground: 270 30% 90%;
     --sidebar-primary: 270 70% 65%;
@@ -98,5 +90,27 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Add custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted) / 0.5);
+    border-radius: var(--radius);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.7);
+    border-radius: var(--radius);
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
   }
 }
+
+    

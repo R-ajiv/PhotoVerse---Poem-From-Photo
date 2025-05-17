@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -10,9 +11,9 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
-        serif: ['var(--font-lora)'], // Add Lora to serif
+        sans: ['var(--font-geist-sans)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+        serif: ['var(--font-lora)', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'], 
       },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -94,11 +95,15 @@ export default {
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
       boxShadow: {
-        'glow-primary-hover': '0 0 12px 1px hsl(var(--primary) / 0.6)',
-        'glow-accent-hover': '0 0 12px 1px hsl(var(--accent) / 0.6)',
-        'glow-card-hover': '0 4px 25px -5px hsl(var(--primary) / 0.35)',
+        'glow-primary-hover': '0 0 15px 2px hsl(var(--primary) / 0.7)',
+        'glow-accent-hover': '0 0 15px 2px hsl(var(--accent) / 0.7)',
+        'glow-card-hover': '0 5px 30px -7px hsl(var(--primary) / 0.45)',
+        'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+        'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
       }
   	}
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
+    
