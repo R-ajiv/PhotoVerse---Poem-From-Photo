@@ -10,6 +10,7 @@ PhotoVerse is a web application that transforms user-uploaded photos into beauti
 - ⚡ Built with Next.js for fast and responsive performance
 - ☁️ Hosted and integrated with Firebase Studio for secure data handling and AI processing
 
+
 ---
 
 ## 🛠️ Tech Stack
